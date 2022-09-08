@@ -9,9 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    lazy var viewResult = ButtonsView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        self.view = self.viewResult
+
      }
 
 
