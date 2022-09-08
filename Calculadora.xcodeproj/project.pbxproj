@@ -13,6 +13,8 @@
 		2C0A1B6028CA563A00A76E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A1B5F28CA563A00A76E58 /* Assets.xcassets */; };
 		2C0A1B6328CA563A00A76E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A1B6128CA563A00A76E58 /* LaunchScreen.storyboard */; };
 		2C0A1B6B28CA58ED00A76E58 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A1B6A28CA58ED00A76E58 /* ButtonsView.swift */; };
+		2C0A1B6D28CA630D00A76E58 /* ButtonsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A1B6C28CA630D00A76E58 /* ButtonsCollectionViewController.swift */; };
+		2C0A1B6F28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A1B6E28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2C0A1B6228CA563A00A76E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C0A1B6428CA563A00A76E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0A1B6A28CA58ED00A76E58 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		2C0A1B6C28CA630D00A76E58 /* ButtonsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsCollectionViewController.swift; sourceTree = "<group>"; };
+		2C0A1B6E28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				2C0A1B6128CA563A00A76E58 /* LaunchScreen.storyboard */,
 				2C0A1B6428CA563A00A76E58 /* Info.plist */,
 				2C0A1B6A28CA58ED00A76E58 /* ButtonsView.swift */,
+				2C0A1B6C28CA630D00A76E58 /* ButtonsCollectionViewController.swift */,
+				2C0A1B6E28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift */,
 			);
 			path = Calculadora;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0A1B5B28CA563800A76E58 /* ViewController.swift in Sources */,
+				2C0A1B6D28CA630D00A76E58 /* ButtonsCollectionViewController.swift in Sources */,
+				2C0A1B6F28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift in Sources */,
 				2C0A1B5728CA563800A76E58 /* AppDelegate.swift in Sources */,
 				2C0A1B6B28CA58ED00A76E58 /* ButtonsView.swift in Sources */,
 				2C0A1B5928CA563800A76E58 /* SceneDelegate.swift in Sources */,
