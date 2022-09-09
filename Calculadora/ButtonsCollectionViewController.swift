@@ -10,6 +10,9 @@ import UIKit
 class ButtonsCollectionViewController: UICollectionViewController , UICollectionViewDelegateFlowLayout {
 
     
+    var valorInserido = [""]
+    var valorUm = [""]
+    var valorDois = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +20,7 @@ class ButtonsCollectionViewController: UICollectionViewController , UICollection
        
         self.collectionView.register(ButtonsCollectionViewCell.self, forCellWithReuseIdentifier: ButtonsCollectionViewCell.reuseIdentifier)
         collectionView.dataSource = self
+        
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -25,7 +29,7 @@ class ButtonsCollectionViewController: UICollectionViewController , UICollection
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ButtonsCollectionViewCell
-        cell.textLabel.text = ButtonsCollectionViewCell.operadoresNumerais[indexPath.row]
+        cell.textLabel.text = Valores.operadoresNumerais[indexPath.row]
         cell.backgroundColor = .systemGreen
         return cell
     }
@@ -47,5 +51,38 @@ class ButtonsCollectionViewController: UICollectionViewController , UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let valor:String = Valores.operadoresNumerais[indexPath.row]
+        
+        if valor == "+"  {
+            valorUm = valorInserido
+            print(valorUm)
+        }else{
+            valorInserido.append(valor)
+            valorDois = valorInserido
+            print(valorDois)
+        }
+//
+//        if valor == "-"{
+//            valorUm = valorInserido
+//            print(valorUm)
+//        }
+//
+//        if valor == "/"{
+//            valorUm = valorInserido
+//            print(valorUm)
+//        }
+//
+//        if valor == "x"{
+//            valorUm = valorInserido
+//            print(valorUm)
+//        }
+//
+        
+        
+//        print(valorInserido)
+    }
+    
     
 }

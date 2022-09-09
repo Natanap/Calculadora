@@ -11,8 +11,6 @@ class ButtonsCollectionViewCell: UICollectionViewCell {
     
     static let reuseIdentifier = "Cell"
     
-    static let operadoresNumerais = ["Ac", "Clear", "%" , "/" , "7" , "8" , "9", "x" , "4", "5", "6", "-", "1", "2","3", "+", "", "0", "," , "="]
-    
     var textLabel: UILabel = {
         let label = UILabel()
         label.text = "Teste"
