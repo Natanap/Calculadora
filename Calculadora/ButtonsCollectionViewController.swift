@@ -10,6 +10,8 @@ import UIKit
 class ButtonsCollectionViewController: UICollectionViewController , UICollectionViewDelegateFlowLayout {
 
     
+    var resultado = ""
+    var digitado = ""
     var valorInserido = [""]
     var valorUm = [""]
     var valorDois = [""]
@@ -53,36 +55,26 @@ class ButtonsCollectionViewController: UICollectionViewController , UICollection
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let valor:String = Valores.operadoresNumerais[indexPath.row]
+            if Valores.operadoresNumerais[indexPath.row] == "+" {
+            
+                if resultado.count<1{
+                    resultado = digitado
+                    digitado = ""
+                
+                } else {
+                    let r: Int = Int(resultado) ?? 0
+                    let d: Int = Int(digitado) ?? 0
+                    resultado = "\(r + d)"
+                }
+            } else {
+            
+                digitado = "\(digitado)\(Valores.operadoresNumerais[indexPath.row])"
+            
+            }
         
-        if valor == "+"  {
-            valorUm = valorInserido
-            print(valorUm)
-        }else{
-            valorInserido.append(valor)
-            valorDois = valorInserido
-            print(valorDois)
+                print("Digitado: \(digitado)")
+                
+                print("Resultado: \(resultado)")
         }
-//
-//        if valor == "-"{
-//            valorUm = valorInserido
-//            print(valorUm)
-//        }
-//
-//        if valor == "/"{
-//            valorUm = valorInserido
-//            print(valorUm)
-//        }
-//
-//        if valor == "x"{
-//            valorUm = valorInserido
-//            print(valorUm)
-//        }
-//
-        
-        
-//        print(valorInserido)
-    }
-    
-    
 }
+
