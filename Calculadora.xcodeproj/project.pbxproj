@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C092B1B28D692EE00E10A1A /* ButtonsView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C092B1A28D692EE00E10A1A /* ButtonsView+Extension.swift */; };
 		2C0A1B5728CA563800A76E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A1B5628CA563800A76E58 /* AppDelegate.swift */; };
 		2C0A1B5928CA563800A76E58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A1B5828CA563800A76E58 /* SceneDelegate.swift */; };
 		2C0A1B5B28CA563800A76E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A1B5A28CA563800A76E58 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C092B1A28D692EE00E10A1A /* ButtonsView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonsView+Extension.swift"; sourceTree = "<group>"; };
 		2C0A1B5328CA563800A76E58 /* Calculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0A1B5628CA563800A76E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C0A1B5828CA563800A76E58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				2C0A1B6A28CA58ED00A76E58 /* ButtonsView.swift */,
 				2C0A1B6E28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift */,
 				2C6FF5AA28CAA42900A7C8F9 /* Valores.swift */,
+				2C092B1A28D692EE00E10A1A /* ButtonsView+Extension.swift */,
 			);
 			path = Calculadora;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0A1B5B28CA563800A76E58 /* ViewController.swift in Sources */,
+				2C092B1B28D692EE00E10A1A /* ButtonsView+Extension.swift in Sources */,
 				2C6FF5AB28CAA42900A7C8F9 /* Valores.swift in Sources */,
 				2C0A1B6F28CA63AF00A76E58 /* ButtonsCollectionViewCell.swift in Sources */,
 				2C0A1B5728CA563800A76E58 /* AppDelegate.swift in Sources */,
