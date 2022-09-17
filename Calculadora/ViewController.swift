@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    lazy var viewResult = ButtonsView()
+    var viewResult:ButtonsView?
+    
+    
+    override func loadView() {
+        self.viewResult = ButtonsView()
+        self.view = viewResult
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = self.viewResult
+        
 
      }
 
